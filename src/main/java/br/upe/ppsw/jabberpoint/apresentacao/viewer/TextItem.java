@@ -1,4 +1,4 @@
-package br.upe.ppsw.jabberpoint.apresentacao;
+package br.upe.ppsw.jabberpoint.apresentacao.viewer;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -14,6 +14,9 @@ import java.text.AttributedString;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import br.upe.ppsw.jabberpoint.apresentacao.model.Slide;
+import br.upe.ppsw.jabberpoint.apresentacao.model.SlideItem;
 
 public class TextItem extends SlideItem {
 
