@@ -14,8 +14,8 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import br.upe.ppsw.jabberpoint.apresentacao.viewer.BitmapItem;
-import br.upe.ppsw.jabberpoint.apresentacao.viewer.TextItem;
+import br.upe.ppsw.jabberpoint.apresentacao.view.BitmapItem;
+import br.upe.ppsw.jabberpoint.apresentacao.view.TextItem;
 
 public class XMLAccessor extends Accessor {
 
