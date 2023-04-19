@@ -10,6 +10,7 @@ import javax.swing.JFrame;
 
 import br.upe.ppsw.jabberpoint.apresentacao.model.Presentation;
 import br.upe.ppsw.jabberpoint.apresentacao.model.Slide;
+import br.upe.ppsw.jabberpoint.apresentacao.view.Drawer;
 
 public class SlideViewerComponent extends JComponent {
   private static final long serialVersionUID = 227L;
@@ -65,7 +66,7 @@ public class SlideViewerComponent extends JComponent {
 
     Rectangle area = new Rectangle(0, YPOS, getWidth(), (getHeight() - YPOS));
 
-    slide.draw(g, area, this);
+//    Drawer.draw(g, area, this, slide.getTitle(), Drawer.getLayouts(this, ));
   }
 
 }

@@ -9,6 +9,7 @@ import javax.imageio.ImageIO;
 import org.springframework.util.ResourceUtils;
 
 import br.upe.ppsw.jabberpoint.apresentacao.model.SlideItem;
+import br.upe.ppsw.jabberpoint.apresentacao.model.Style;
 
 public class BitmapItem extends SlideItem {
 
@@ -37,20 +38,6 @@ public class BitmapItem extends SlideItem {
 
   public String getName() {
     return imageName;
-  }
-
-  public Rectangle getBoundingBox(Graphics g, ImageObserver observer, float scale, Style myStyle) {
-    return new Rectangle((int) (myStyle.indent * scale), 0,
-        (int) (bufferedImage.getWidth(observer) * scale),
-        ((int) (myStyle.leading * scale)) + (int) (bufferedImage.getHeight(observer) * scale));
-  }
-
-  public void draw(int x, int y, float scale, Graphics g, Style myStyle, ImageObserver observer) {
-    int width = x + (int) (myStyle.indent * scale);
-    int height = y + (int) (myStyle.leading * scale);
-
-    g.drawImage(bufferedImage, width, height, (int) (bufferedImage.getWidth(observer) * scale),
-        (int) (bufferedImage.getHeight(observer) * scale), observer);
   }
 
   public String toString() {

@@ -17,7 +17,7 @@ import org.xml.sax.SAXException;
 import br.upe.ppsw.jabberpoint.apresentacao.view.BitmapItem;
 import br.upe.ppsw.jabberpoint.apresentacao.view.TextItem;
 
-public class XMLAccessor extends Accessor {
+public class XMLAccessor implements Accessor {
 
   protected static final String DEFAULT_API_TO_USE = "dom";
 
